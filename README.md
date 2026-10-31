@@ -14,7 +14,9 @@
   <a href="https://zonchess.com/contact.html">Send feedback</a>
 </p>
 
-SwissMax helps with the work around a tournament: cleaning player data, publishing pairings and results, working out prizes, revealing winners and printing certificates. **Swiss-Manager still makes the pairings and the official ranking, and the arbiter keeps authority over them.** SwissMax handles everything around that.
+## What is SwissMax?
+
+**SwissMax Companion is a Windows app for chess tournament organizers and arbiters who use Swiss-Manager.** It helps with the work around a tournament: cleaning player data, publishing pairings and results, working out prizes, revealing winners and printing certificates. **Swiss-Manager still makes the pairings and the official ranking, and the arbiter keeps authority over them.** SwissMax handles everything around that.
 
 It was built in Malaysia by an independent chess parent, shaped by real tournaments and by experienced organizers and arbiters.
 
@@ -32,6 +34,18 @@ It was built in Malaysia by an independent chess parent, shaped by real tourname
 <p align="center">
   <img src="assets/workflow.jpg" alt="One event, one flow: source, players, pairings, results, winners, certificates." width="100%">
 </p>
+
+## Problems it solves
+
+| On tournament day | How SwissMax helps |
+|---|---|
+| Registrations arrive as a messy Google Form or Excel sheet | Cleans them and exports Swiss-Manager XML, TXT or XLSX |
+| Pairing lists are hard to read on the wall or in WhatsApp | Turns a Chess-Results link or Swiss-Manager files into A4 graphics |
+| Many sections mean many screenshots | One link brings in every section, and one ZIP holds every page |
+| Players keep asking for the latest results and points | Round results graphics show every board, with each player's points added up |
+| Prizes are checked by hand late in the day | Prize schemes suggest winners from the official ranking |
+| Certificates take hours, and names get misspelled | A named certificate for every player in one batch, in many scripts |
+| Helpers carry result slips across the hall | Helper phones send results to the organizer PC over the venue network |
 
 ## What SwissMax does
 
@@ -126,6 +140,21 @@ Swiss-Manager's own `.TUNX` and `.TURX` tournament files are not read.
 
 <img src="assets/gallery.jpg" alt="A wall of pairing, winner and certificate designs." width="100%">
 
+## Supported formats
+
+| | |
+|---|---|
+| **Tournament sources** | Chess-Results link, TRF, or pairing and ranking lists as Excel, CSV, HTML, text PDF or XML |
+| **Registrations** | CSV, Excel, ODS, XML, text-layer PDF, or paste from Google Sheets |
+| **Results files** | Excel, CSV or HTML |
+| **For Swiss-Manager** | Players as XML, TXT or XLSX, and Player-Results XML |
+| **Graphics** | A4 PNG at 300 DPI, one page or every section in a ZIP |
+| **Video** | MP4 in Story (1080×1920) or Square (1080×1080) |
+| **Certificates** | 300-DPI PNG, combined PDF, or a ZIP of PDFs |
+| **Backup** | One `.swissmax` file |
+
+Swiss-Manager's own `.TUNX` and `.TURX` tournament files are not read.
+
 ## Install and first run
 
 1. **Download** the installer from the [latest release](https://github.com/mfamirs/swissmax-downloads/releases/tag/companion-v1.0.0-rc.20).
@@ -151,6 +180,48 @@ Have an older SwissMax? Click **Back up** first and keep the `.swissmax` file. C
 - **Certificates:** check one sample before you print a batch. If your ranking has no category, the words "in the category" print with nothing after them.
 - **Wording:** a few screens still say "Private Pilot" from earlier test builds. You have the right build if the version near the logo matches the release.
 - **Pilot testers:** pilot keys from earlier builds are being replaced. Contact us for your new key.
+
+## Common questions
+
+### Does SwissMax replace Swiss-Manager?
+
+No. Swiss-Manager remains the pairing, ranking and official tournament-administration system. SwissMax is an independent companion for the operational and presentation work around it.
+
+### How do I turn Chess-Results pairings into graphics?
+
+Paste the tournament's Chess-Results link into SwissMax and choose the round. Pick one of 14 designs, in portrait or landscape, and save A4 pages at 300 DPI: one page, all pages, or every section in one ZIP.
+
+### How do I turn Google Form registrations into a Swiss-Manager file?
+
+Open the CSV or Excel file from your form, or paste straight from Google Sheets. SwissMax matches the columns, shows what needs a look, then exports Swiss-Manager XML, TXT or XLSX.
+
+### How can I print chess certificates with Arabic, Tamil or Chinese names?
+
+Use eCert Studio. Names come from the ranking, the winners or your own list. Arabic names print right to left, and Tamil, Devanagari and Chinese names print whole, in PNG and PDF.
+
+### Can helper phones collect results for Swiss-Manager?
+
+Yes. Helper phones join the venue network by QR code and send each board's result to the organizer PC. SwissMax then writes the Player-Results XML for Swiss-Manager.
+
+### Is SwissMax free?
+
+The trial is free for 14 days with every Companion feature. After that, a paid licence is needed to continue operations. The licence is one payment for one PC. Orders are not open yet.
+
+### Does SwissMax work outside Malaysia?
+
+Yes, wherever Swiss-Manager works. MCF, Malaysia's national rating list, is built in, and nothing else is country-specific. If you would like your own federation, league or club rating handled the same way, please [tell us](https://zonchess.com/contact.html).
+
+### Is my player list uploaded?
+
+No. Participant lists are processed on your PC. When SwissMax reads Chess-Results or refreshes the MCF list, it only downloads public pages and files.
+
+### Does SwissMax run on Mac or Linux?
+
+Not at the moment. SwissMax runs on Windows 10 and 11, 64-bit.
+
+### Is SwissMax open source?
+
+No. SwissMax is commercial software. This repository holds this page, and the releases hold the installers.
 
 ## Feedback
 
