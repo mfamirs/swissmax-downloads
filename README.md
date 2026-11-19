@@ -5,7 +5,7 @@
 <h3 align="center">A Windows companion for chess organizers who use Swiss-Manager</h3>
 
 <p align="center">
-  <a href="https://github.com/mfamirs/swissmax-downloads/releases/tag/companion-v1.0.0-rc.20"><b>⬇ Download the free 14-day trial</b></a>
+  <a href="https://github.com/mfamirs/swissmax-downloads/releases/latest"><b>⬇ Download SwissMax Companion 1.0 (free 14-day trial)</b></a>
   &nbsp;·&nbsp;
   <a href="#what-swissmax-does">See what it does</a>
   &nbsp;·&nbsp;
@@ -19,6 +19,18 @@
 **SwissMax Companion is a Windows app for chess tournament organizers and arbiters who use Swiss-Manager.** It helps with the work around a tournament: cleaning player data, publishing pairings and results, working out prizes, revealing winners and printing certificates. **Swiss-Manager still makes the pairings and the official ranking, and the arbiter keeps authority over them.** SwissMax handles everything around that.
 
 It was built in Malaysia by an independent chess parent, shaped by real tournaments and by experienced organizers and arbiters.
+
+## New in 1.0
+
+SwissMax Companion 1.0.0 (19 November 2026) is the first stable release.
+
+- **Guided demo.** A fictional open tournament opens in its own window and walks you through player import, the Swiss-Manager files, late players, round results, winners and e-certificates. Your real project is not touched, and demo outputs are marked DEMO. [See it below](#8-demo-and-guides).
+- **New interactive guides** for player import, winner selection and more, offered the first time you open a page that has one.
+- **Checked against a real copy of Swiss-Manager 15.** Player lists, late players and round results, forfeits included, were imported into Swiss-Manager and read back.
+- **Late players without starting over.** Export only the players who registered late, with club numbers, and add them to your Swiss-Manager tournament.
+- **Updating from a trial build** keeps your projects, settings and licence. Earlier trial builds are offered 1.0 as an in-app update.
+
+Full notes: [release 1.0.0](https://github.com/mfamirs/swissmax-downloads/releases/tag/companion-v1.0.0) · [zonchess.com release log](https://zonchess.com/changelog.html)
 
 ## The trial at a glance
 
@@ -56,18 +68,19 @@ It was built in Malaysia by an independent chess parent, shaped by real tourname
 - [Winners and reveal video](#5-winners-and-reveal-video)
 - [eCert Studio](#6-ecert-studio)
 - [LAN results, ratings and safety](#7-lan-results-ratings-and-safety)
-- [Settings and support](#8-settings-and-support)
+- [Demo and guides](#8-demo-and-guides)
+- [Settings and support](#9-settings-and-support)
 
 ### 1. Source and operations
 
 <img src="assets/01-source.jpg" alt="Operations screen with a demo tournament of four sections." width="100%">
 
 - **Chess-Results link:** paste one link and SwissMax reads the event, creates each section, and loads the ranking and the pairing of the round you choose.
-- **Swiss-Manager exports:** TRF, or pairing and ranking lists as Excel, CSV, HTML, text PDF or XML. Several sections can be opened at once, and Import update takes a newer file.
+- **Swiss-Manager exports:** TRF, or pairing and ranking lists as Excel, CSV, HTML, text PDF or XML. Standings saved as fixed-width text also load, and HTML standings keep every tied player. Several sections can be opened at once, and Import update takes a newer file.
 - **Refresh with a safety net:** the last good pairing and ranking stay if the site cannot be read.
 - **Operations overview:** see what stage each section is at and the next sensible step, with tournament, section and round always in view.
 
-Swiss-Manager's own `.TUNX` and `.TURX` tournament files are not read.
+Swiss-Manager's own `.TUNX` and `.TURX` tournament files, and pairing lists saved as text, are not read.
 
 ### 2. Players and Swiss-Manager files
 
@@ -78,6 +91,7 @@ Swiss-Manager's own `.TUNX` and `.TURX` tournament files are not read.
 - **Review before the first pairing:** names, dates of birth, gender, ratings and categories are cleaned, and duplicates are flagged.
 - **International players:** federation, FIDE ID and national ID or passport are carried through.
 - **Export:** Swiss-Manager XML, TXT or XLSX, or all of them in a ZIP. Each player keeps the same XML player ID when you export again.
+- **Late players:** export only the players added since your last export, with Swiss-Manager club numbers, so the tournament you already set up is not replaced.
 - **Player Lookup:** one card for a player's FIDE and MCF record. MCF is Malaysia's national rating list. If you would like your own federation handled the same way, please [tell us](https://zonchess.com/contact.html).
 
 ### 3. Pairing graphics
@@ -129,7 +143,17 @@ Swiss-Manager's own `.TUNX` and `.TURX` tournament files are not read.
 - **Backups:** one-file `.swissmax` backups that hold the whole event, including certificates, and can be opened from the first screen on this PC or another.
 - **Recovery:** automatic snapshots are saved as you work.
 
-### 8. Settings and support
+### 8. Demo and guides
+
+<img src="assets/08-demo-guides.jpg" alt="The guided demo window with its chapter list, and an interactive guide on the winners screen, with fictional data." width="100%">
+
+- **Guided demo:** open it from the licence screen or from **Interactive guide → Guided demo**. A fictional open tournament runs in its own window, and your real project stays hidden and untouched.
+- **Seven chapters:** import the registrations, clean the player data, hand over to Swiss-Manager, late players, pairings and results, winners and prizes, and e-certificates.
+- **Show me, or Do it for me:** watch where each step happens, or let SwissMax do it with the sample data.
+- **Nothing to clean up:** demo data is discarded when you exit. Files you save from the demo go to `Documents\SwissMax Demo` with a `DEMO_` prefix, and demo graphics and certificates are marked DEMO.
+- **Interactive guides:** step-by-step guides for player import, winner selection and other pages, under **Interactive guide** at the top.
+
+### 9. Settings and support
 
 - **Organizer profiles:** keep your logo, form settings and prize schemes in one place.
 - **Regular Players library:** reuse players you see at every event.
@@ -157,29 +181,28 @@ Swiss-Manager's own `.TUNX` and `.TURX` tournament files are not read.
 
 ## Install and first run
 
-1. **Download** the installer from the [latest release](https://github.com/mfamirs/swissmax-downloads/releases/tag/companion-v1.0.0-rc.20).
+1. **Download** the installer from the [latest release](https://github.com/mfamirs/swissmax-downloads/releases/latest).
 2. **Check the file (optional).** In PowerShell, in the folder with the file, run:
    ```powershell
-   Get-FileHash .\zonChess-SwissMax-Setup-1.0.0-rc.20-x64.exe -Algorithm SHA256
+   Get-FileHash .\zonChess-SwissMax-Setup-1.0.0-x64.exe -Algorithm SHA256
    ```
    The result should match the SHA-256 on the release page.
 3. **Run the installer.** Windows may show "Windows protected your PC" or "Unknown publisher", because the installer is signed by Motivace Studio with our own certificate, not a paid trusted-publisher certificate. Choose **More info**, then **Run anyway**. Only do this for a file from this page.
 4. **Start the trial.** Tick the terms box and choose **Agree & start 14-day trial**. If you close that window first, click **Not activated** at the top of SwissMax to open it again.
-5. **Load your event.** Paste a Chess-Results link, open your Swiss-Manager files, or choose **Open a project backup**.
+5. **Load your event.** Paste a Chess-Results link, open your Swiss-Manager files, or choose **Open a project backup**. New to SwissMax? Try the **guided demo** first.
 
-Have an older SwissMax? Click **Back up** first and keep the `.swissmax` file. Close SwissMax, then run the new installer over it. Your projects stay.
+Have an older SwissMax? It offers 1.0 as an in-app update, or you can run the new installer over it. Click **Back up** first and keep the `.swissmax` file. Your projects, settings and licence stay.
 
 ## Good to know
 
-- **After 14 days:** your saved projects and backups stay on your PC, and a paid key is needed to continue operations. The Companion licence is RM160 or USD39.99 for one PC, paid once, with perpetual use of eligible versions and two years of free updates and support. Orders are not open yet, so please [contact us](https://zonchess.com/contact.html). Waitlist members get 50% off when sales open.
+- **After 14 days:** your saved projects and backups stay on your PC, and a paid key is needed to continue operations. The Companion licence is RM160 or USD39.99 for one PC, paid once, with perpetual use of eligible versions and two years of free updates and support. Orders are not open yet, so please [contact us](https://zonchess.com/contact.html). Waitlist members pay RM80 or USD20 (50% off) for one licence per registered email when sales open.
 - **One trial per PC.** Reinstalling keeps the original dates.
 - **Internet:** the trial starts online once, then SwissMax works offline. Chess-Results links, MCF list refreshes and external sharing need internet. LAN results use the venue network.
-- **This is a pre-release build.** Please keep your own backups, and check important outputs before you publish them.
+- **Keep your own backups,** and check important outputs before you publish them.
 - **Finished Chess-Results events:** open Pairings, type the round number and choose **Refresh this round**.
 - **Prize schemes:** the starting scheme includes age and female groups. If your ranking has no ages or sexes, remove those groups or add the details first.
 - **Certificates:** check one sample before you print a batch. If your ranking has no category, the words "in the category" print with nothing after them.
-- **Wording:** a few screens still say "Private Pilot" from earlier test builds. You have the right build if the version near the logo matches the release.
-- **Pilot testers:** pilot keys from earlier builds are being replaced. Contact us for your new key.
+- **Pilot testers:** if your pilot key from an earlier build no longer works, contact us for a new one.
 
 ## Common questions
 
@@ -231,7 +254,7 @@ More about SwissMax: [zonchess.com/swissmax.html](https://zonchess.com/swissmax.
 
 ---
 
-Images show real SwissMax screens and outputs with invented names and demo data. One player screen is from the September build.
+Images show real SwissMax screens and outputs with invented names and demo data. One player screen is from the September build, and the demo and guide screens are from 1.0.
 
 The installers are on the [Releases](https://github.com/mfamirs/swissmax-downloads/releases) page. This repository holds this page and its images, and no source code.
 
