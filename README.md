@@ -195,7 +195,7 @@ Have an older SwissMax? It offers 1.0 as an in-app update, or you can run the ne
 
 ## Good to know
 
-- **After 14 days:** your saved projects and backups stay on your PC, and a paid key is needed to continue operations. The Companion licence is RM160 or USD39.99 for one PC, paid once, with perpetual use of eligible versions and two years of free updates and support. Orders are not open yet, so please [contact us](https://zonchess.com/contact.html). Waitlist members pay RM80 or USD20 (50% off) for one licence per registered email when sales open.
+- **After 14 days:** your saved projects and backups stay on your PC, and a paid key is needed to continue operations. The Companion licence is RM160 or USD39.99 for one PC, paid once, with perpetual use of eligible versions and two years of free updates and support. Orders are not open yet, so please [contact us](https://zonchess.com/contact.html). Waitlist members who joined by 21 November 2026 (Malaysia time) pay RM80 or USD20 (50% off) for one licence per registered email when sales open.
 - **One trial per PC.** Reinstalling keeps the original dates.
 - **Internet:** the trial starts online once, then SwissMax works offline. Chess-Results links, MCF list refreshes and external sharing need internet. LAN results use the venue network.
 - **Keep your own backups,** and check important outputs before you publish them.
